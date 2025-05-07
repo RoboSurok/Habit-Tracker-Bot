@@ -21,9 +21,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     #Сохранение в бд
-    context.user_data.clear()
-    context.chat_data.clear()
-
     await update.message.reply_text(
         "Сессия завершена. До свидания! Чтобы начать заново, напишите /start",
         reply_markup=ReplyKeyboardRemove()

@@ -1,1 +1,2 @@
 telegram==20.7
+sqlalchemy==2.0.40
